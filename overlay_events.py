@@ -23,7 +23,7 @@ list_of_events = [
 ]
 """
 # read list of events from file
-with open('list_of_events.txt', 'r') as f:
+with open('inputs/list_of_events.txt', 'r') as f:
     data = f.readlines()
 
 # clean events

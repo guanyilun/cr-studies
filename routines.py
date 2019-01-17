@@ -131,7 +131,8 @@ class OverlayEvents(Routine):
                         d_x = np.arange(0, len(d_y))
 
                         # make a smooth curve
-                        f = interp1d(d_x, d_y, kind='cubic')
+                        # f = interp1d(d_x, d_y, kind='cubic')
+                        f = interp1d(d_x, d_y)
                         d_x_new = np.linspace(0, len(d_y)-1, 100)
                         self._ax.plot(d_x_new, f(d_x_new), 'r-', alpha=0.1)
 
